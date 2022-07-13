@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+<section id="header">
+   <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+   <h1>Surf-Pro</h1>
+   
+   <div>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>        
+        <li id="lg-bag"><a class="active" href="cart.html">Shopping Bag <i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#" id="close"><i class=""></i></a>
+    </ul>
+    </div>
+
+</section>
+
+     
+<section id="page-header">
+    <h2>Welcome To Your Cart!</h2>
+</section>
+
+<section id="cart" class="section-p1">
+    <table width="100%">
+       <thead>
+        <tr>
+            <td><h6>Remove</h6></td>
+            <td><h6>Image<h6></td>
+            <td></h6>Product</h6></td>
+            <td><h6>Price</h6></td>
+            <td><h6>Quantity</h6></td>
+            <td><h6>Subtotal</h6></td>
+        </tr>
+       </thead> 
+       <tbody>
+         <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="img/products/f1.jpg" alt=""></td>
+            <td>Surfing Board</td>
+            <td>$359.99</td>
+            <td><input type="number" value="1"></td>
+            <td>$359.99</td>
+         </tr>
+         <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="img/products/f2.jpg" alt=""></td>
+            <td>Surfing Board</td>
+            <td>$359.99</td>
+            <td><input type="number" value="1"></td>
+            <td>$359.99</td>
+         </tr>
+         <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="img/products/f3.jpg" alt=""></td>
+            <td>Surfing Board</td>
+            <td>$359.99</td>
+            <td><input type="number" value="1"></td>
+            <td>$359.99</td>
+         </tr>
+         <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="img/products/f4.jpg" alt=""></td>
+            <td>Surfing Board</td>
+            <td>$359.99</td>
+            <td><input type="number" value="1"></td>
+            <td>$359.99</td>
+         </tr>
+       </tbody>
+    </table>
+</section>
+
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+    <div id="subtotal">
+      <h3>Cart Total:</h3>  
+      <table>
+        <tr>
+            <td>Cart Subtotal</td>
+            <td>$ 1,439.96</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total:</strong></td>
+            <td><strong>$ 1,439.96</strong></td>
+        </tr>
+      </table>
+      <button class="normal">Proceed to checkout</button>
+    </div>
+</section>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>

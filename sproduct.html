@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+<section id="header">
+   <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+   <h1>Surf-Pro</h1>
+   
+   <div>
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Shopping Bag <i class="fa-solid fa-bag-shopping"></i></a></li>
+    </ul>
+    </div>
+
+</section>
+
+     <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                
+                    <div class="small-img-col">
+                        <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    
+                        <div class="small-img-col">
+                            <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                        </div>
+                        
+                            <div class="small-img-col">
+                                <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                            </div>
+                            </div>
+                            </div>
+        
+
+        <div class="single-pro-details">
+            <h6>ODYSEA</h6>
+            <h4>Surfing Board</h4>
+            <h2>$359.99</h2>
+            <select>
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>The 54 Special has a deep entry concave and vee out the tail; creating a nicely rockered rail with a flat center line.
+         This provides excellent speed down the line, but super-responsive turning once the rail is engaged. 
+         The 54 Special is a step forward in design and performance that pushes the boundaries of what is possible on a soft surfboard</span>
+        </div>
+     </section>
+
+     
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function() {
+        MainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function() {
+        MainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function() {
+        MainImg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function() {
+        MainImg.src = smallimg[3].src;
+    }
+</script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+
+
+</body>
+</html>
