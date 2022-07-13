@@ -1,32 +1,31 @@
 //const { default: axios } = require("axios")
 
 const sendToHtml = document.getElementById('electronics-container')
-const form = document.querySelector('#form1')
-const baseURL = 'http://localhost:4004/api/data'
+const form = document.querySelector('form')
+const baseURL = `http://localhost:4004`
 
 const dataCallback = ({ data: data}) => {
-  console.log('dataCallBackHit')
+  
   displayData(data)}
 const errCallback = err => console.log(err)
 
-const getAllProducts = () => axios.get(baseURL).then(dataCallback).catch(errCallback)
-const createData = body=> axios.post(baseURL, body).then(dataCallback).catch(errCallback)
+const getAllProducts = () => axios.get(baseURL+'/api/data').then(dataCallback).catch(errCallback)
+const createData = body => axios.post(baseURL +'/api/adddata', body).then(dataCallback).catch(errCallback)
+const deleteData = id => axios.delete(`${baseURL}/api/delete/${id}`).then(dataCallback).catch(errCallback)
 function createProduct(data) {
   const dataCard = document.createElement('div')
   dataCard.classList.add('data-card')
 
   dataCard.innerHTML = `<img alt='shoe cover image' src=${data.imageURL} class="shoe-cover-image"/>
   <p class="name1">${data.address}</p>
-  <p class="shoe-price">$${data.price}</p>`
+  <p class="shoe-price">$${data.price}</p>
+  <button class="deletebtn" onclick = "deleteData(${data.id})">Delete</button>
+  `
 
 ;
 
   sendToHtml.appendChild(dataCard)
 }
-
-
-
-
 
 
 
@@ -52,20 +51,6 @@ function submitHandler(e) {
   price.value = ''
   imageURL.value = ''
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
