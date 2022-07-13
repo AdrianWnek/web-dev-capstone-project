@@ -15,6 +15,10 @@ module.exports = {
         data.push(newBoard)
         res.status(200).send(data)
         globalId++;
-    }
-    
+    },
+    deletebtn: (req,res) => {
+        let index = data.findIndex(elem => elem.id === +req.params.id)
+        data.splice(index, 1);
+        res.status(200).send(data);
+    },
 }
