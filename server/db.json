@@ -1,25 +1,25 @@
 [
     {
       "id": 1,
-      "address": "Surf Board",
+      "address": "surf board 1",
       "price": 359,
       "imageURL" : "https://cdn.shopify.com/s/files/1/1154/7998/products/ODY54-WEL_BK21_TB_1024x1024.jpg?v=1615919717"
     },
     {
       "id": 2,
-      "address": "Surf Board",
+      "address": "surf board 2",
       "price": 359,
       "imageURL" : "https://cdn.shopify.com/s/files/1/1154/7998/products/ODY52PRO-5-JOB_HP20_TBreshoot_1024x1024.jpg?v=1588363954"
     }
     ,{
       "id": 3,
-      "address": "Surf Board",
+      "address": "surf board 3",
       "price": 359,
       "imageURL" : "https://cdn.shopify.com/s/files/1/1154/7998/products/ODY54-TB_PN20_TB_1024x1024.jpg?v=1581372571"
     }
     ,{
       "id": 4,
-      "address": "Surf Board",
+      "address": "surf board 4",
       "price": 359,
       "imageURL" : "https://cdn.shopify.com/s/files/1/1154/7998/products/ODY56-Q_BL22_TB_2048x2048.jpg?v=1652728876"
     }
